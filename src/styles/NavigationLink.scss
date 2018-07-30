@@ -1,0 +1,13 @@
+
+.nav-link{
+    display: flex;
+    padding: 11px 0 10px 0;
+    border-bottom: 1px solid $border-col;
+    
+    &__text{
+        text-decoration: none;
+        align-self: center;
+        padding-left: 25px;
+        @include font( 16px, $font-col1, 700);
+    }
+}

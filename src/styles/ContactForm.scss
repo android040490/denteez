@@ -1,0 +1,163 @@
+.contact-form{
+    position: relative;
+    top: -100px;
+    max-width: 760px;
+    margin: auto;
+    
+    &__description{
+        color: $font-col6;
+        margin: 0;
+    }
+    &__form{
+        background: #fff;
+        padding: 16px 20px;
+        border: 1px solid $border-col;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-input{
+            width: 100%;
+        }
+        &-short-input{
+            width: 48%;
+        }
+    }
+    &__btn-submit{
+        background: $bg-main;
+        border: none;
+        border-radius: 4px;
+        padding: 16px;
+        margin-top: 21px;
+        width: 100%;
+        @include font(16px, #fff);
+        cursor: pointer;
+
+    }
+    // &__btn-submit:disabled{
+    //     filter: grayscale(80%);
+    //     transition: filter .5s linear;
+    // }
+
+    &__btn-submit:hover{
+        filter: brightness(110%);
+        box-shadow: 3px 3px 3px #999;
+    }
+    
+}
+
+
+.select{
+    position: relative;
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+    select{
+        padding: 15px 19px;
+        width: 100%;
+        background: transparent;
+        padding-right: 25px;
+        border-radius: 3px;
+        border: 1px solid $border-input;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        @include font(16px, $font-col4, 700);
+        option{
+            padding: 19px;
+        }
+          
+    }
+
+}
+.select::before{
+    position: absolute;
+    top: 23px;
+    right: 7px;
+    content: '';
+    background-image: url(assets/images/icons/Arrow.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+}
+
+.form-input{
+    padding-top: 11px;
+    padding-bottom: 5px;
+    position: relative;
+    &__label{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        @include font(16px, $font-col4, 700);
+    }
+    input, textarea{
+        width: 100%;
+        padding: 15px 19px;
+        border-radius: 3px;
+        border: 1px solid $border-input;
+        @include font(16px, $font-col4, 700);
+    }
+    textarea{
+        height: 152px;
+        resize: none;
+    }
+    &__hidden-input{
+        padding-top: 20px;
+    }
+}
+
+.photo-input{
+    padding-top: 10px;
+    padding-bottom: 2px;
+    &__text{
+        padding: 0 16px;
+        h6{
+            @include font(16px, $font-col2);
+            text-align: center;
+            padding-bottom: 3px;
+        }
+        p{
+            @include font(12px, $font-col6);
+            text-align: center;
+            margin: 0;
+        }
+    }
+    label{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 130px;
+        background: $bg-photo-input;
+        border-radius: 3px;
+        border: 1px solid $border-input; 
+        
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.error-message{
+    background: #f00;
+    color: #fff; 
+    padding: 0 10px;
+}
+
+.popup-message{
+    position: absolute;
+    top: 100%; right: 0; left: 0;
+    background : #fff;
+    padding : 10px;
+    &__title{
+        text-align: center;
+        @include font( 20px, 700);
+    }
+    &__description{
+        text-align: center;
+        @include font( 16px, 500);
+    }
+}

@@ -1,0 +1,64 @@
+.primary-header{
+    background: $bg-main;
+    padding: 11px 0 10px 0;
+    border-bottom: 2px solid $brd-header;
+    // width: 100%;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        width: 130px;
+        flex-shrink: 0;
+        img{
+            width: 100%;
+        }
+    }
+    &__search-form{
+        align-self: center;
+        flex-basis: 1;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 25px;
+        input{
+            background: $bg-header-search;
+            background-image: url(assets/images/icons/Search.png);
+            background-repeat: no-repeat;
+            background-position: 10px 10px;
+            color: $header-color;
+            border: none;
+            padding: 8px 0 10px 36px;
+            font-size: 15px;
+            width: 100%;
+        }
+        input::placeholder{
+            color: $header-color;
+        }
+    }
+    &__user-info{
+        display: flex;
+    }
+    &__info-icon{
+        align-self: center;
+        margin-right: 18px;
+    }
+    &__current-user{
+        display: flex;
+    }
+    &__user-avatar{
+        align-self: center;
+        margin-left: 11px;
+        width: 32px;
+        img{
+            border-radius: 4px;
+            width: 100%;
+        }
+    }
+    &__user-name{
+        white-space: nowrap;
+        align-self: center;
+        padding: 0 11px;
+        color: $header-color;
+        font-weight: 400;
+    }
+}

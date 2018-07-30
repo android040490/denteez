@@ -1,0 +1,22 @@
+.page{
+    min-width: 970px;
+    &__content{
+        display: flex;
+        justify-content: stretch;
+
+    }
+    &__main-content{
+        flex-grow: 1;
+        box-sizing: border-box;
+        padding: 10px 15px;
+    }
+    &__left-sidebar{
+        width: 212px;
+        flex-shrink: 0;
+    }
+    &__right-sidebar{
+        width: 212px;
+        background: rgb(83, 190, 34);
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,124 @@
+.contact-us-page{
+    max-width: 1440px;
+    min-width: 970px;
+    margin: auto;
+    position: relative;
+    &__header{
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 80px;
+        padding: 0 40px 0 50px;
+        &-logo{
+            line-height: 0%;
+            img{
+                width: 130px;
+            }
+        }
+        &-login-btn{
+            background: $bg-main;
+            padding: 7px 19px 6px 19px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            @include font( 14px, #fff);
+            cursor: pointer;
+        }
+        &-login-btn:hover{
+            filter: brightness(110%);
+            box-shadow: 3px 3px 3px #333;
+        }
+    }
+    &__banner{
+        &-content{
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            margin-top: 180px;
+        }
+        &-title{
+            text-align: center;
+            @include font(48px, #fff, 300);
+        }
+        &-text{
+            @include font(20px, #fff, 300);
+            line-height: 150%;
+            max-width: 485px;
+            margin: auto;
+            padding-top: 6px;
+            text-align: center;
+        }
+    }
+    &__banner-img{
+        max-width: 1440px;
+        height: 510px;
+        background: url(assets/images/smiling-woman.jpg);
+        background-position: center;
+        // img{
+        //     width: 1440px;
+        //     display: block;
+        // }
+    }
+    &__form-section{
+        background: url(assets/images/BG.jpg);
+    }
+    &__about-section{
+        border-top: 1px solid $border-col;
+        border-bottom: 1px solid $border-col;
+        
+    }
+}
+
+.about-section{
+    padding-top: 90px;
+    padding-bottom: 107px;
+    max-width: 1280px;
+    margin: auto;
+    &__header{
+        @include font(30px, $font-col4, 300);
+        text-align: center;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 35px;
+    }
+    &__side{
+        width: 47%;
+        line-height: 150%;
+        @include font(16px, $font-col2, 300);
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+    padding: 12px 0;
+    &__side{
+
+    }
+    &__copyright{
+        @include font(12px, $font-col5);
+    }
+    &__menu{
+        padding: 0;
+        padding-right: 4px;
+        li{
+            list-style: none;
+            display: inline-block;
+            padding-left: 24px;
+        }
+        
+        
+    }
+    &__link{
+        @include font(12px, $font-col5);
+        text-decoration: none;
+    }
+
+
+}

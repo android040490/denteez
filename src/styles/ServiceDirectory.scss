@@ -1,0 +1,64 @@
+.service-directory{
+    color: $font-col4;
+    &__content{
+        position: relative;
+        padding: 15px 7px;
+        border: 1px solid $border-col;
+        border-radius: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__item{
+        flex-basis: 0;
+        flex-shrink: 0;
+        margin: 0 8px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        
+    }
+    &__item:hover &__service-img{
+        background: $bg-service-img;  
+    }
+    &__item:hover &__service-title{
+        color: #71973c;
+    }
+    &__service-img{
+        width: 140px;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid $border-col;
+        transition: border-radius .3s linear;
+        img{
+            width: 83%;
+            align-self: center;
+        }
+    
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 13px;
+    }
+    &__title{
+        font-size: 30px;
+        font-weight: 400;
+        @include font(30px, $font-col4 );
+    }
+    &__btn{
+        padding: 7px 19px;
+        color: #fff;
+        font-size: 14px;
+        background: $bg-main;
+        border: none;
+        border-radius: 4px;
+        align-self: center;
+
+    }
+    &__service-title{
+        text-align: center;
+        padding-top: 18px;
+        @include font(14px, $font-col4, 700 );
+    }
+}

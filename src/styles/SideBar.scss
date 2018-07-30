@@ -1,0 +1,96 @@
+.sidebar{
+    &__item{
+        border-bottom: 1px solid $border-col;
+    }
+    &__item:last-child{
+        border: none;
+    }
+}
+
+.advertisement{
+    padding: 12px 0 10px 0;
+    &__title{
+        @include font( 14px, $font-col2, 700);
+        padding: 5px 0 15px 0;;
+    }
+    &__img{}
+    &__ads-by{
+        font-size: 11px;
+        color: $font-col3;
+        padding: 2px 0 7px 0;
+    }
+}
+
+.recommendation{
+    padding-top: 17px;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 17px;
+    }
+    &__title{
+        @include font( 14px, $font-col2, 700);
+    }
+    &__link{
+        @include font( 14px, $font-col4, 700);
+        text-decoration: none;
+    }
+}
+
+.advertising-link{
+    padding-bottom: 20px;
+    &__img{
+        width: 80px;
+        height:80px;
+        overflow: hidden;
+        border-radius: 4px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        transition: all .2s linear;
+        img{
+            // min-width: 100%;
+            align-self: center;
+        }
+    }
+    &__img:hover{
+        border-radius: 50%;
+    }
+    &__content{
+        display: flex;
+    }
+    &__text{
+        padding-left: 9px;
+    }
+    &__header{
+        padding-bottom: 6px;
+        line-height: 100%;
+    }
+    &__title{
+        @include font( 16px, $font-col4, 700);
+        line-height: 100%
+        
+    }
+    &__descr{
+        @include font(14px, $font-col2, 500);
+        padding-bottom: 2px;
+    }
+    &__link{
+        @include font(12px, $font-col4, 700);
+    }
+}
+
+.copyright{
+    &__title{
+        @include font( 11px, $font-col5, 700);
+        padding: 16px 0;
+    }
+    &__navbar{
+        display: flex;
+    }
+    &__link{
+        text-decoration: none;
+        @include font( 11px, $font-col5);
+        padding-right: 22px;
+    }
+}
